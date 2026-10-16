@@ -71,10 +71,10 @@ export default function Newsletter() {
         deleted.
       </PageHeader>
       <div className="cards">
-        <StatCard label="Total subscribers" value={num(c?.total)} sub="Everyone who has signed up" />
-        <StatCard label="Active subscribers" value={num(c?.active)} sub="Receiving updates" />
-        <StatCard label="Unsubscribed" value={num(c?.unsubscribed)} sub="Kept on record, not contacted" />
-        <StatCard label="New subscribers" value={num(c?.recent)} sub="Subscribed in the last 30 days" />
+        <StatCard label="Total subscribers" icon="mail" value={num(c?.total)} sub="Everyone who has signed up" />
+        <StatCard label="Active subscribers" icon="checkCircle" accent="green" value={num(c?.active)} sub="Receiving updates" />
+        <StatCard label="Unsubscribed" icon="logout" accent="rose" value={num(c?.unsubscribed)} sub="Kept on record, not contacted" />
+        <StatCard label="New subscribers" icon="trend" accent="green" value={num(c?.recent)} sub="Subscribed in the last 30 days" />
       </div>
       <ServerList<Subscriber>
         queryKey="subscribers"
