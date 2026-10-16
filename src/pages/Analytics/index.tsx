@@ -66,12 +66,20 @@ function Body({ r }: { r: NonNullable<Awaited<ReturnType<typeof getReports>>> })
 
   return (
     <>
-      <div className="cards">
-        <StatCard label="Raised" value={inr(t.raised)} sub={change(t.raised, t.raisedPrev)} />
-        <StatCard label="Successful donations" value={t.donations} sub={`${t.donors} unique donor(s)`} />
-        <StatCard label="Average donation" value={inr(Math.round(t.average))} sub="Per successful donation" />
-        <StatCard label="New volunteers" value={t.volunteers} sub={change(t.volunteers, t.volunteersPrev)} />
-        <StatCard label="Document requests" value={t.requests} sub="Received in this period" />
+      <div className="cards-wrap">
+        <div className="cards balanced">
+          <StatCard label="Raised" icon="rupee" accent="green" value={inr(t.raised)} sub={change(t.raised, t.raisedPrev)} />
+          <StatCard
+            label="Successful donations"
+            icon="checkCircle"
+            accent="green"
+            value={t.donations}
+            sub={`${t.donors} unique donor(s)`}
+          />
+          <StatCard label="Average donation" icon="trend" accent="green" value={inr(Math.round(t.average))} sub="Per successful donation" />
+          <StatCard label="New volunteers" icon="heart" accent="rose" value={t.volunteers} sub={change(t.volunteers, t.volunteersPrev)} />
+          <StatCard label="Document requests" icon="fileText" accent="amber" value={t.requests} sub="Received in this period" />
+        </div>
       </div>
       <div className="grid-2">
         <Panel title="Donations raised per month">

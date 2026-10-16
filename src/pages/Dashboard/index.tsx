@@ -69,7 +69,7 @@ export default function Dashboard() {
     { label: "Ongoing", value: c.projects.website.ongoing + c.projects.added.ongoing, cls: "ok" },
     { label: "Completed", value: c.projects.website.completed + c.projects.added.completed, cls: "dark" },
     { label: "Planned", value: c.projects.added.planned, cls: "warn" },
-    { label: "Not dated (website)", value: c.projects.website["not dated"], cls: "mut" }
+    { label: "Not dated", value: c.projects.website["not dated"], cls: "mut" }
   ];
 
   return (
@@ -77,12 +77,21 @@ export default function Dashboard() {
       <PageHeader
         title={`${greeting()}, ${me.display_name || me.email} 👋`}
         actions={
-          <button className="ghost" onClick={() => dash.refetch()}>
+          <Button
+            className="ghost"
+            busy={dash.isFetching || contact.isFetching}
+            busyText="Refreshing…"
+            onClick={() =>
+              Promise.all([dash.refetch(), contact.refetch()])
+                .then(() => toast("Dashboard refreshed.", "ok"))
+                .catch((e) => toast(messageOf(e), "err"))
+            }
+          >
             Refresh
-          </button>
+          </Button>
         }
       >
-        {`Here's an overview of your impact and activities · live from the database · updated ${new Date(dash.dataUpdatedAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })}`}
+        {`Here's an overview of your impact and activities · live from the database · updated ${new Date(dash.dataUpdatedAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" })}`}
       </PageHeader>
       <div className="row">
         <button onClick={() => setProjectForm(true)}>+ Add project</button>
@@ -94,63 +103,80 @@ export default function Dashboard() {
         {todo.length ? todo : <span className="chip ok">✓ Nothing waiting for approval</span>}
       </div>
 
-      <div className="cards">
-        <StatCard
-          label="Total funds raised"
-          value={inr(d.funds.total)}
-          sub={`Online ${inr(d.funds.online)} · Offline ${inr(d.funds.offline)}`}
-          href="/donations"
-        />
-        <StatCard
-          label="Raised this month"
-          value={inr(d.funds.thisMonth)}
-          sub={d.funds.pending ? `${d.funds.pending} payment(s) pending` : "No pending payments"}
-          href="/reports"
-        />
-        <StatCard
-          label="Donation records"
-          value={num(c.donations.records)}
-          sub={`${num(c.donations.success)} successful · ${num(c.donations.pending)} pending · ${num(c.donations.failed + c.donations.cancelled + c.donations.refunded)} other`}
-          href="/donations"
-        />
-        <StatCard
-          label="Volunteers"
-          value={num(c.volunteers.total)}
-          sub={`${num(c.volunteers.active)} active · ${num(c.volunteers.pending)} pending · ${num(c.volunteers.inactive)} inactive`}
-          href="/volunteers?tab=volunteers"
-          tone={c.volunteers.pending ? "attn" : ""}
-        />
-        <StatCard
-          label="Total projects"
-          value={num(c.projects.website.total + c.projects.added.total)}
-          sub={`${num(c.projects.website.total)} on website portfolio · ${num(c.projects.added.total)} added here`}
-          href="/projects"
-        />
-        <StatCard
-          label="Active projects"
-          value={num(ongoing)}
-          sub={`${num(c.projects.website.completed + c.projects.added.completed)} completed · ${num(c.projects.added.planned)} planned`}
-          href="/projects"
-        />
-        <StatCard
-          label="Beneficiary reach"
-          value={num(d.reach.website + d.reach.added)}
-          sub={`Website figure ${num(d.reach.website)} + ${num(d.reach.added)} from added projects`}
-        />
-        <StatCard
-          label="Pending document requests"
-          value={num(d.pendingRequests)}
-          sub={`${num(c.requests.total)} received in total`}
-          href="/requests"
-          tone={d.pendingRequests ? "attn" : ""}
-        />
-        <StatCard
-          label="Upcoming events"
-          value={num(c.events.upcoming)}
-          sub={`${num(c.events.published)} published · ${num(c.events.total)} in total`}
-          href="/events"
-        />
-        <StatCard label="Admin users" value={num(c.admins)} sub="People who can sign in here" href="/admins" />
+      <div className="cards-wrap">
+        <div className="cards balanced">
+          <StatCard
+            label="Total funds raised"
+            icon="rupee"
+            accent="green"
+            value={inr(d.funds.total)}
+            sub={`Online ${inr(d.funds.online)} · Offline ${inr(d.funds.offline)}`}
+            href="/donations"
+          />
+          <StatCard
+            label="Raised this month"
+            icon="trend"
+            accent="green"
+            value={inr(d.funds.thisMonth)}
+            sub={d.funds.pending ? `${d.funds.pending} payment(s) pending` : "No pending payments"}
+            href="/reports"
+          />
+          <StatCard
+            label="Donation records"
+            icon="receipt"
+            accent="green"
+            value={num(c.donations.records)}
+            sub={`${num(c.donations.success)} successful · ${num(c.donations.pending)} pending · ${num(c.donations.failed + c.donations.cancelled + c.donations.refunded)} other`}
+            href="/donations"
+          />
+          <StatCard
+            label="Volunteers"
+            icon="heart"
+            accent="rose"
+            value={num(c.volunteers.total)}
+            sub={`${num(c.volunteers.active)} active · ${num(c.volunteers.pending)} pending · ${num(c.volunteers.inactive)} inactive`}
+            href="/volunteers?tab=volunteers"
+            tone={c.volunteers.pending ? "attn" : ""}
+          />
+          <StatCard
+            label="Total projects"
+            icon="folder"
+            value={num(c.projects.website.total + c.projects.added.total)}
+            sub={`${num(c.projects.website.total)} on website portfolio · ${num(c.projects.added.total)} added here`}
+            href="/projects"
+          />
+          <StatCard
+            label="Active projects"
+            icon="checkCircle"
+            value={num(ongoing)}
+            sub={`${num(c.projects.website.completed + c.projects.added.completed)} completed · ${num(c.projects.added.planned)} planned`}
+            href="/projects"
+          />
+          <StatCard
+            label="Beneficiary reach"
+            icon="target"
+            value={num(d.reach.website + d.reach.added)}
+            sub={`Website figure ${num(d.reach.website)} + ${num(d.reach.added)} from added projects`}
+          />
+          <StatCard
+            label="Pending document requests"
+            icon="fileText"
+            accent="amber"
+            value={num(d.pendingRequests)}
+            sub={`${num(c.requests.total)} received in total`}
+            href="/requests"
+            tone={d.pendingRequests ? "attn" : ""}
+          />
+          <StatCard
+            label="Upcoming events"
+            icon="calendar"
+            accent="amber"
+            value={num(c.events.upcoming)}
+            sub={`${num(c.events.published)} published · ${num(c.events.total)} in total`}
+            href="/events"
+          />
+          <StatCard label="Admin users" icon="shield" value={num(c.admins)} sub="People who can sign in here" href="/admins" />
+        </div>
       </div>
 
       <div className="grid-2">
@@ -292,6 +318,9 @@ export default function Dashboard() {
         <Panel title="Projects by status">
           <StatBars items={projStatus} />
           <p className="mut">Website portfolio + projects added in admin.</p>
+          <Link to="/projects" className="more">
+            All projects →
+          </Link>
         </Panel>
       </div>
       <p className="mut">Funds count successful INR donations only.</p>
