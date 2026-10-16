@@ -26,7 +26,28 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+}
+.cards-wrap {
+  container-type: inline-size;
+  margin-bottom: 20px;
+}
+.cards-wrap .cards {
+  margin-bottom: 0;
+}
+/* the dashboard has 10 cards: two even rows of 5 when wide, 2 per row when medium, 1 on a phone */
+.cards.balanced {
+  grid-template-columns: 1fr;
+}
+@container (min-width: 440px) {
+  .cards.balanced {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@container (min-width: 1040px) {
+  .cards.balanced {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
 .card {
   position: relative;
@@ -49,49 +70,61 @@
   background: #dbe9fb;
   color: var(--brand);
 }
-.card:nth-child(4n + 1) {
-  background: #f1f7ff;
+/* cards with a picture: picture on top, then number, label and detail, all left-aligned */
+.card.has-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 16px 18px 16px;
+  min-height: 0;
 }
-.card:nth-child(4n + 2) {
-  background: #f0faf5;
+.card.has-icon::before {
+  content: none;
 }
-.card:nth-child(4n + 3) {
-  background: #fff8ee;
+.card .ic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: #e5effc;
+  color: var(--brand);
 }
-.card:nth-child(4n + 4) {
-  background: #fff3f3;
+.card.green .ic {
+  background: #dcf4e6;
+  color: #15803d;
 }
-.card:nth-child(4n + 2)::before {
-  background: #d3f1e1;
-  color: #16a34a;
-  content: "✦";
+.card.amber .ic {
+  background: #ffefd2;
+  color: #b45309;
 }
-.card:nth-child(4n + 3)::before {
-  background: #ffe8c7;
-  color: #d97706;
-  content: "▣";
-}
-.card:nth-child(4n + 4)::before {
-  background: #ffdede;
-  color: #e11d48;
-  content: "♥";
+.card.rose .ic {
+  background: #fde4e8;
+  color: #be123c;
 }
 .card .n {
   font-size: 26px;
+  line-height: 1.15;
   font-weight: 700;
   color: var(--ink);
 }
 .card .l {
-  color: var(--mut);
-  font-size: 13px;
+  color: var(--ink);
+  font-size: 13.5px;
+  font-weight: 500;
 }
 .card .s {
   color: var(--mut);
   font-size: 12px;
+  line-height: 1.4;
   margin-top: 4px;
 }
 .card.attn {
   border-color: #f3d48f;
+  background: #fffaf0;
 }
 a.card {
   display: block;
@@ -99,11 +132,16 @@ a.card {
   color: inherit;
   transition:
     border-color 0.15s ease,
-    box-shadow 0.15s ease;
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+a.card.has-icon {
+  display: flex;
 }
 a.card:hover {
-  border-color: var(--brand);
-  box-shadow: 0 4px 14px -6px rgba(15, 76, 129, 0.35);
+  border-color: #b9d3f3;
+  box-shadow: 0 10px 24px -14px rgba(15, 76, 129, 0.45);
+  transform: translateY(-1px);
 }
 
 /* ---- tags, chips, messages ---- */
@@ -861,4 +899,72 @@ select.org-sel {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---- panel polish: headers, footers, feeds and empty states line up across a row of panels ---- */
+.panel > h2:first-child {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0 0 14px;
+}
+.panel > .row:first-child {
+  min-height: 36px;
+  margin-bottom: 14px;
+}
+.panel > .row:first-child h2 {
+  margin: 0;
+}
+.grid-2 > .panel,
+.grid-3 > .panel {
+  display: flex;
+  flex-direction: column;
+}
+/* the "see all" link sits at the bottom of every panel, whatever the content above it */
+.panel .more {
+  margin-top: auto;
+  padding-top: 14px;
+  align-self: flex-start;
+}
+.panel > .empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feed li {
+  gap: 12px;
+  padding: 11px 0;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.feed li:first-child {
+  padding-top: 0;
+}
+.feed .mut {
+  font-size: 12px;
+}
+.feed .dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+}
+.feed-r {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.sbar {
+  grid-template-columns: minmax(96px, 40%) 1fr 28px;
+}
+.panel > p.mut {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+}
+/* long names, e-mail addresses and activity lines wrap inside the panel instead of pushing the time out */
+.feed li > .grow {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
