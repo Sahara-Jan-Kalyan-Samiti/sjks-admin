@@ -202,10 +202,12 @@ export default function Admins() {
     <div>
       <PageHeader title="Admins & activity">Who can sign in, and every change made in this admin panel.</PageHeader>
       <div className="cards">
-        <StatCard label="Signed in as" value={me.email} sub={ROLE[me.role]} />
-        <StatCard label="Admin users" value={admins.data?.length ?? "…"} sub="Accounts that can open this panel" />
+        <StatCard label="Signed in as" icon="users" value={me.email} sub={ROLE[me.role]} />
+        <StatCard label="Admin users" icon="shield" value={admins.data?.length ?? "…"} sub="Accounts that can open this panel" />
         <StatCard
           label="E-mail sending"
+          icon="mail"
+          accent="amber"
           value={backendConfigured ? "Via backend" : "Off"}
           sub={
             backendConfigured ? "Receipts, documents and broadcasts go through sjks-backend" : "Set VITE_API_URL to connect sjks-backend"
