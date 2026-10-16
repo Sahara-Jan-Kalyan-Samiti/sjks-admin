@@ -640,6 +640,9 @@ export const hiAdminPatterns: [string, string][] = [
 
 /** A few more fixed texts that the list above does not include. */
 export const hiAdminMore: Record<string, string> = {
+  // sidebar headings and footer
+  "Overview": "सारांश", "Programmes": "कार्यक्रम", "Funds & people": "निधि और लोग", "Messages": "संदेश",
+  "Website content": "वेबसाइट सामग्री", "Administration": "प्रशासन", "View website": "वेबसाइट देखें",
   // status words and small labels as the tables show them
   "success": "सफल", "pending": "लंबित", "failed": "असफल", "refunded": "वापस किया गया", "cancelled": "रद्द", "planned": "नियोजित", "ongoing": "जारी", "completed": "पूर्ण",
   "sent": "भेजा गया", "new": "नया", "active": "सक्रिय", "inactive": "निष्क्रिय", "admin": "एडमिन", "editor": "संपादक", "viewer": "दर्शक", "not dated": "तिथि नहीं", "no change": "कोई बदलाव नहीं",
