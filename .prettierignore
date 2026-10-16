@@ -1,0 +1,5 @@
+dist
+node_modules
+package-lock.json
+src/data/generated
+src/i18n/hi.admin.ts

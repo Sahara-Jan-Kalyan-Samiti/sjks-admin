@@ -1,0 +1,275 @@
+/* Reset, typography and the plain HTML elements: buttons, form controls, tables, links. */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+body {
+  margin: 0;
+  font: 15px/1.45 var(--font);
+  color: var(--ink);
+  background: var(--bg);
+}
+a {
+  color: var(--brand);
+}
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+h2.sec {
+  margin: 22px 0 10px;
+}
+.mut {
+  color: var(--mut);
+  font-size: 13px;
+}
+.pre {
+  white-space: pre-wrap;
+}
+
+/* ---- buttons ---- */
+button,
+.btn {
+  font: inherit;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    color 0.15s ease;
+}
+button.ghost,
+.btn.ghost {
+  background: #fff;
+  color: var(--brand);
+}
+button.danger {
+  background: #fff;
+  color: var(--bad);
+  border-color: var(--bad);
+}
+button.danger.solid {
+  background: var(--bad);
+  color: #fff;
+}
+button.sm {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+button:not(:disabled):hover,
+.btn:hover {
+  filter: brightness(1.06);
+}
+button.ghost:not(:disabled):hover,
+.btn.ghost:hover {
+  background: #eef5fd;
+  filter: none;
+}
+button.danger:not(:disabled):hover {
+  background: #fdeceb;
+  filter: none;
+}
+button.danger.solid:hover {
+  background: #951f19;
+}
+.is-busy {
+  cursor: progress;
+}
+
+/* ---- form controls ---- */
+input,
+select,
+textarea {
+  font: inherit;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cfd9e8;
+  border-radius: var(--radius-input);
+  background: #fff;
+}
+textarea {
+  resize: vertical;
+}
+label {
+  display: block;
+  font-size: 13px;
+  color: var(--mut);
+  margin-bottom: 10px;
+}
+label input,
+label select,
+label textarea {
+  margin-top: 3px;
+  color: var(--ink);
+}
+label.chk {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+label.chk input {
+  width: auto;
+  margin: 0;
+}
+label select + input:not([hidden]) {
+  margin-top: 6px;
+}
+[aria-invalid="true"] {
+  border-color: var(--bad);
+  background: #fffafa;
+}
+.ferr {
+  display: block;
+  color: var(--bad);
+  font-size: 12px;
+  margin-top: 3px;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+tr.click:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ---- tables ---- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 640px;
+}
+th,
+td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-size: 14px;
+  vertical-align: top;
+}
+th {
+  background: #f4f8fd;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+tr.click {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+tr.click:hover {
+  background: #f1f7ff;
+}
+td.num,
+th.num {
+  text-align: right;
+}
+td.actions {
+  width: 1%;
+  white-space: nowrap;
+}
+.td-empty {
+  text-align: center;
+  color: var(--mut);
+  padding: 26px 10px;
+}
+
+/* ---- details, key/value lists, thumbnails ---- */
+.kvs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+  margin: 10px 0;
+}
+.kv {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.files li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 4px 0;
+}
+.thumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.thumbs div {
+  width: 96px;
+}
+.thumbs img {
+  width: 96px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+.photo-preview img {
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 12px;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #1b6fd8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+img.avatar {
+  object-fit: cover;
+  flex: none;
+  background: #e8eef7;
+}
+details > summary {
+  cursor: pointer;
+  padding: 2px 0;
+  font-size: 15px;
+}
+details[open] > summary {
+  margin-bottom: 10px;
+}
+details textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 21px;
+  }
+  .kvs {
+    grid-template-columns: 1fr;
+  }
+}

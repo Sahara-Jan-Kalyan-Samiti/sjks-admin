@@ -1,0 +1,21 @@
+/* Design tokens of the admin panel. Change the look here; nothing else hard-codes the brand colours. */
+:root {
+  --brand: #1b6fd8;
+  --dark: #0b3d7a;
+  --bg: #f4f8fd;
+  --line: #e5ecf6;
+  --ink: #0f2340;
+  --mut: #6b7a90;
+  --sidebar: #fff;
+  --ok: #157a3d;
+  --bad: #b3261e;
+  --warn: #9a6700;
+  --focus: #38bdf8;
+
+  --radius-card: 18px;
+  --radius-control: 12px;
+  --radius-input: 10px;
+  --shadow-card: 0 6px 22px -14px rgba(11, 61, 122, 0.25);
+
+  --font: Poppins, "Noto Sans Devanagari", system-ui, sans-serif;
+}

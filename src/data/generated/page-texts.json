@@ -1,0 +1,1621 @@
+{
+  "max": 2000,
+  "texts": [
+    {
+      "key": "home.impact.1.value",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 1: number",
+      "text": "25,000+",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.1.label",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 1: text",
+      "text": "Direct & indirect beneficiaries",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.2.value",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 2: number",
+      "text": "3,000+",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.2.label",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 2: text",
+      "text": "Children in education programmes",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.3.value",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 3: number",
+      "text": "2,000+ patients",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.3.label",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 3: text",
+      "text": "Patients supported",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.4.value",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 4: number",
+      "text": "1,500+",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.4.label",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 4: text",
+      "text": "Women in SHGs & livelihoods",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.5.value",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 5: number",
+      "text": "5,000+",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.5.label",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 5: text",
+      "text": "Environment participants",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.6.value",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 6: number",
+      "text": "2004",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.impact.6.label",
+      "page": "Home: Impact Numbers",
+      "label": "Impact dashboard 6: text",
+      "text": "Working since",
+      "long": false,
+      "section": "Impact dashboard"
+    },
+    {
+      "key": "home.figures.1.value",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 1: number",
+      "text": "20+",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.1.label",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 1: text",
+      "text": "Years of Service",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.2.value",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 2: number",
+      "text": "3,000+",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.2.label",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 2: text",
+      "text": "Children Supported",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.3.value",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 3: number",
+      "text": "14",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.3.label",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 3: text",
+      "text": "Projects Delivered",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.4.value",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 4: number",
+      "text": "6",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "home.figures.4.label",
+      "page": "Home: Impact Numbers",
+      "label": "Key figure 4: text",
+      "text": "Core Programmes",
+      "long": false,
+      "section": "Key figures card"
+    },
+    {
+      "key": "about.hero.title",
+      "page": "About Us",
+      "label": "Banner heading",
+      "text": "Community Progress Built on Integrity & Action.",
+      "long": false
+    },
+    {
+      "key": "about.hero.text",
+      "page": "About Us",
+      "label": "Banner text",
+      "text": "Working alongside rural and urban families to create practical, inclusive pathways to healthcare, education, livelihoods, and environmental protection.",
+      "long": true
+    },
+    {
+      "key": "about.founder.title",
+      "page": "About Us",
+      "label": "Founder message: heading",
+      "text": "Message from the Founder Chairman & CEO",
+      "long": false
+    },
+    {
+      "key": "about.founder.lead",
+      "page": "About Us",
+      "label": "Founder message: opening words (bold)",
+      "text": "Established in 2004,",
+      "long": false
+    },
+    {
+      "key": "about.founder.intro",
+      "page": "About Us",
+      "label": "Founder message: first paragraph",
+      "text": "Sahara Jan Kalyan Samiti has grown from community-led work into programmes supporting education, healthcare, nutrition, women's livelihoods, renewable energy and environmental awareness across 12 districts of Madhya Pradesh.",
+      "long": true
+    },
+    {
+      "key": "about.founder.quote1",
+      "page": "About Us",
+      "label": "Founder message: quote 1",
+      "text": "\"Our journey began with a singular belief: true social welfare is not about charity, but about empowering communities to stand strong on their own feet.\"",
+      "long": true
+    },
+    {
+      "key": "about.founder.quote2",
+      "page": "About Us",
+      "label": "Founder message: quote 2",
+      "text": "\"Over the years, our dedicated teams of local volunteers, doctors, teachers, and eco-activists have worked tirelessly at the grassroots level. Every step is guided by empathy and accountability.\"",
+      "long": true
+    },
+    {
+      "key": "about.founder.quote3",
+      "page": "About Us",
+      "label": "Founder message: quote 3",
+      "text": "\"I invite donors, corporate CSR partners, and passionate volunteers to join hands with us as we build healthy, educated, and self-supporting communities.\"",
+      "long": true
+    },
+    {
+      "key": "about.founder.role",
+      "page": "About Us",
+      "label": "Founder: designation",
+      "text": "Founder Chairman & CEO",
+      "long": false
+    },
+    {
+      "key": "about.founder.card",
+      "page": "About Us",
+      "label": "Founder: line on the photo card",
+      "text": "25+ years in social development and community empowerment",
+      "long": false
+    },
+    {
+      "key": "about.mission.title",
+      "page": "About Us",
+      "label": "Mission & Vision: heading",
+      "text": "Our Purpose and Foundational Guiding Values",
+      "long": false
+    },
+    {
+      "key": "about.vision.title",
+      "page": "About Us",
+      "label": "Vision: heading",
+      "text": "Equitable, Inclusive & Empowered Society",
+      "long": false
+    },
+    {
+      "key": "about.vision.text",
+      "page": "About Us",
+      "label": "Vision: text",
+      "text": "To build a world-class social development organization creating an equitable, inclusive, healthy, and empowered society, free from discrimination, poverty, and inequality.",
+      "long": true
+    },
+    {
+      "key": "about.mission.cardTitle",
+      "page": "About Us",
+      "label": "Mission: heading",
+      "text": "Sustainable Community Development",
+      "long": false
+    },
+    {
+      "key": "about.mission.text",
+      "page": "About Us",
+      "label": "Mission: text",
+      "text": "Empower communities through sustainable development interventions in education, health, livelihood, women empowerment, environment, renewable energy, youth development, and social justice while strengthening community participation and institutional capacity.",
+      "long": true
+    },
+    {
+      "key": "about.values.title",
+      "page": "About Us",
+      "label": "Core values: heading",
+      "text": "Our Core Values",
+      "long": false
+    },
+    {
+      "key": "about.values.1.title",
+      "page": "About Us",
+      "label": "Core value 1: name",
+      "text": "Quality",
+      "long": false
+    },
+    {
+      "key": "about.values.1.text",
+      "page": "About Us",
+      "label": "Core value 1: text",
+      "text": "Excellence through research, innovation, continuous improvement, transparency, accountability and professional management systems.",
+      "long": true
+    },
+    {
+      "key": "about.values.2.title",
+      "page": "About Us",
+      "label": "Core value 2: name",
+      "text": "Caring",
+      "long": false
+    },
+    {
+      "key": "about.values.2.text",
+      "page": "About Us",
+      "label": "Core value 2: text",
+      "text": "Serving communities with empathy, compassion, dignity and respect for every individual.",
+      "long": false
+    },
+    {
+      "key": "about.values.3.title",
+      "page": "About Us",
+      "label": "Core value 3: name",
+      "text": "Participation",
+      "long": false
+    },
+    {
+      "key": "about.values.3.text",
+      "page": "About Us",
+      "label": "Core value 3: text",
+      "text": "Sustainable development is possible only through active community participation and ownership.",
+      "long": true
+    },
+    {
+      "key": "about.values.4.title",
+      "page": "About Us",
+      "label": "Core value 4: name",
+      "text": "Transparency",
+      "long": false
+    },
+    {
+      "key": "about.values.4.text",
+      "page": "About Us",
+      "label": "Core value 4: text",
+      "text": "Transparency, accountability and ethical governance in all organisational processes and programmes.",
+      "long": true
+    },
+    {
+      "key": "about.philosophy.quote",
+      "page": "About Us",
+      "label": "Philosophy: quote",
+      "text": "The planting of trees is the least self-centered of all that we do. Someone enjoys the shade and fruits today because someone planted a tree a long time ago.",
+      "long": true
+    },
+    {
+      "key": "about.philosophy.text",
+      "page": "About Us",
+      "label": "Philosophy: text",
+      "text": "Deeply rooted values, volunteers as nurturing agents, and a long-term commitment to growth that benefits future generations.",
+      "long": true
+    },
+    {
+      "key": "about.focus.title",
+      "page": "About Us",
+      "label": "Thematic areas: heading",
+      "text": "Major Thematic Areas",
+      "long": false
+    },
+    {
+      "key": "about.focus.1.title",
+      "page": "About Us",
+      "label": "Thematic area 1: name",
+      "text": "Education",
+      "long": false
+    },
+    {
+      "key": "about.focus.1.text",
+      "page": "About Us",
+      "label": "Thematic area 1: text",
+      "text": "School education support, digital learning, girls' education, remedial education, scholarship support and career guidance.",
+      "long": true
+    },
+    {
+      "key": "about.focus.2.title",
+      "page": "About Us",
+      "label": "Thematic area 2: name",
+      "text": "Health & Nutrition",
+      "long": false
+    },
+    {
+      "key": "about.focus.2.text",
+      "page": "About Us",
+      "label": "Thematic area 2: text",
+      "text": "Health awareness camps, maternal & child health, nutrition programmes and community health interventions.",
+      "long": true
+    },
+    {
+      "key": "about.focus.3.title",
+      "page": "About Us",
+      "label": "Thematic area 3: name",
+      "text": "WASH",
+      "long": false
+    },
+    {
+      "key": "about.focus.3.text",
+      "page": "About Us",
+      "label": "Thematic area 3: text",
+      "text": "School sanitation programmes, hygiene awareness and safe drinking water promotion.",
+      "long": false
+    },
+    {
+      "key": "about.focus.4.title",
+      "page": "About Us",
+      "label": "Thematic area 4: name",
+      "text": "Women Empowerment",
+      "long": false
+    },
+    {
+      "key": "about.focus.4.text",
+      "page": "About Us",
+      "label": "Thematic area 4: text",
+      "text": "Self Help Groups, livelihood promotion, skill training and leadership development.",
+      "long": false
+    },
+    {
+      "key": "about.focus.5.title",
+      "page": "About Us",
+      "label": "Thematic area 5: name",
+      "text": "Tribal Development",
+      "long": false
+    },
+    {
+      "key": "about.focus.5.text",
+      "page": "About Us",
+      "label": "Thematic area 5: text",
+      "text": "Community mobilisation, traditional knowledge promotion, and education & health support.",
+      "long": false
+    },
+    {
+      "key": "about.focus.6.title",
+      "page": "About Us",
+      "label": "Thematic area 6: name",
+      "text": "Environment & Energy",
+      "long": false
+    },
+    {
+      "key": "about.focus.6.text",
+      "page": "About Us",
+      "label": "Thematic area 6: text",
+      "text": "Tree plantation, solar awareness campaigns, renewable energy promotion and climate awareness.",
+      "long": true
+    },
+    {
+      "key": "about.focus.7.title",
+      "page": "About Us",
+      "label": "Thematic area 7: name",
+      "text": "Youth & Skills",
+      "long": false
+    },
+    {
+      "key": "about.focus.7.text",
+      "page": "About Us",
+      "label": "Thematic area 7: text",
+      "text": "Vocational training, entrepreneurship development, sports promotion, leadership & life skills.",
+      "long": true
+    },
+    {
+      "key": "about.focus.8.title",
+      "page": "About Us",
+      "label": "Thematic area 8: name",
+      "text": "Bharat Maternal Mission",
+      "long": false
+    },
+    {
+      "key": "about.focus.8.text",
+      "page": "About Us",
+      "label": "Thematic area 8: text",
+      "text": "Maternal health, neonatal care systems, nutritional support and community training in remote districts.",
+      "long": true
+    },
+    {
+      "key": "about.reach.title",
+      "page": "About Us",
+      "label": "Where we work: heading",
+      "text": "12 Districts of Madhya Pradesh and Beyond",
+      "long": false
+    },
+    {
+      "key": "about.reach.text",
+      "page": "About Us",
+      "label": "Where we work: text",
+      "text": "With 20+ years of grassroots field experience, the Samiti works with marginalised, tribal, rural and underprivileged communities through participatory, community-driven development.",
+      "long": true
+    },
+    {
+      "key": "about.committee.title",
+      "page": "About Us",
+      "label": "Executive committee: heading",
+      "text": "Our Executive Committee",
+      "long": false
+    },
+    {
+      "key": "about.team.title",
+      "page": "About Us",
+      "label": "Management team: heading",
+      "text": "Management Team",
+      "long": false
+    },
+    {
+      "key": "about.partners.title",
+      "page": "About Us",
+      "label": "Partners: heading",
+      "text": "Who We Work With",
+      "long": false
+    },
+    {
+      "key": "about.partners.text",
+      "page": "About Us",
+      "label": "Partners: text",
+      "text": "Funding, technology, government and community partners across India and the USA who have made our programmes possible.",
+      "long": true
+    },
+    {
+      "key": "about.legal.title",
+      "page": "About Us",
+      "label": "Registration: heading",
+      "text": "Registration & Tax Records",
+      "long": false
+    },
+    {
+      "key": "about.legal.text",
+      "page": "About Us",
+      "label": "Registration: text",
+      "text": "Registered Society under the M.P. Societies Registration Act, 1973 (Sec. 44), registered on 19 October 2004. 12A and 80G approved, FCRA and CSR-1 registered.",
+      "long": true
+    },
+    {
+      "key": "about.legal.cta.title",
+      "page": "About Us",
+      "label": "Registration: blue box heading",
+      "text": "Need Official Legal Documents for CSR Verification?",
+      "long": false
+    },
+    {
+      "key": "about.legal.cta.text",
+      "page": "About Us",
+      "label": "Registration: blue box text",
+      "text": "Download our organisation profile with all registration and tax details, read our impact reports, or request copies of individual certificates from the Transparency Center.",
+      "long": true
+    },
+    {
+      "key": "projects.hero.title",
+      "page": "Our Projects",
+      "label": "Banner heading",
+      "text": "Our Projects",
+      "long": false
+    },
+    {
+      "key": "projects.hero.text",
+      "page": "Our Projects",
+      "label": "Banner text",
+      "text": "Comprehensive interventions designed for long-term community resilience.",
+      "long": false
+    },
+    {
+      "key": "project.women-empowerment.title",
+      "page": "Our Projects",
+      "label": "Women Empowerment: project name",
+      "text": "Self-Reliance Tailoring Center",
+      "long": false
+    },
+    {
+      "key": "project.women-empowerment.text",
+      "page": "Our Projects",
+      "label": "Women Empowerment: description",
+      "text": "Job skills training, Self-Help Groups (SHGs) support, and financial literacy workshops helping rural and urban women achieve financial independence.",
+      "long": true
+    },
+    {
+      "key": "project.medical-facilities.title",
+      "page": "Our Projects",
+      "label": "Medical Facilities: project name",
+      "text": "Medical Facilities & Hospital Funding",
+      "long": false
+    },
+    {
+      "key": "project.medical-facilities.text",
+      "page": "Our Projects",
+      "label": "Medical Facilities: description",
+      "text": "Funding for hospitals and medical facilities, treatment assistance for patients who cannot afford care, and free health check-up camps in remote villages.",
+      "long": true
+    },
+    {
+      "key": "project.child-education.title",
+      "page": "Our Projects",
+      "label": "Child Education: project name",
+      "text": "Shiksha Sahara Child Education Programme",
+      "long": false
+    },
+    {
+      "key": "project.child-education.text",
+      "page": "Our Projects",
+      "label": "Child Education: description",
+      "text": "Free community learning centers, remedial classes, school kits, uniforms, and digital literacy outreach for underprivileged children.",
+      "long": true
+    },
+    {
+      "key": "project.environment.title",
+      "page": "Our Projects",
+      "label": "Environment: project name",
+      "text": "Harit Sagar Tree Campaign",
+      "long": false
+    },
+    {
+      "key": "project.environment.text",
+      "page": "Our Projects",
+      "label": "Environment: description",
+      "text": "Massive native tree plantation campaigns, eco-workshops, plastic-free market drives, and community clean-up initiatives.",
+      "long": true
+    },
+    {
+      "key": "project.social-welfare.title",
+      "page": "Our Projects",
+      "label": "Social Relief: project name",
+      "text": "Winter Blanket & Cloth Drive",
+      "long": false
+    },
+    {
+      "key": "project.social-welfare.text",
+      "page": "Our Projects",
+      "label": "Social Relief: description",
+      "text": "Emergency disaster relief, seasonal blanket & clothing drives, ration kits for senior citizens, and community food drives.",
+      "long": true
+    },
+    {
+      "key": "project.solar-lantern.title",
+      "page": "Our Projects",
+      "label": "Renewable Energy: project name",
+      "text": "Solar Lantern Distribution Programme",
+      "long": false
+    },
+    {
+      "key": "project.solar-lantern.text",
+      "page": "Our Projects",
+      "label": "Renewable Energy: description",
+      "text": "Solar LED lanterns with charging panels for off-grid tribal families in forest-fringe villages of Sagar district, in partnership with Jiv Daya Foundation, USA.",
+      "long": true
+    },
+    {
+      "key": "projects.upcoming.title",
+      "page": "Our Projects",
+      "label": "Upcoming projects: heading",
+      "text": "Upcoming & New Projects",
+      "long": false
+    },
+    {
+      "key": "projects.upcoming.text",
+      "page": "Our Projects",
+      "label": "Upcoming projects: text",
+      "text": "Projects we are preparing or have recently started, as announced by our team.",
+      "long": false
+    },
+    {
+      "key": "projects.upcoming.empty",
+      "page": "Our Projects",
+      "label": "Upcoming projects: text when there are none",
+      "text": "New projects will be announced here soon.",
+      "long": false
+    },
+    {
+      "key": "projects.portfolio.title",
+      "page": "Our Projects",
+      "label": "Portfolio: heading",
+      "text": "Complete Project Portfolio 2004 – 2025",
+      "long": false
+    },
+    {
+      "key": "projects.portfolio.text",
+      "page": "Our Projects",
+      "label": "Portfolio: text (the link to the impact report follows it)",
+      "text": "All 14 projects implemented by the Samiti since 2004, with location, reach, budget and funding source, as reported in our",
+      "long": true
+    },
+    {
+      "key": "medical.point.1.title",
+      "page": "Medical Facilities",
+      "label": "About box 1: name",
+      "text": "Hospital funding",
+      "long": false
+    },
+    {
+      "key": "medical.point.1.text",
+      "page": "Medical Facilities",
+      "label": "About box 1: text",
+      "text": "Donations to hospitals for patient care facilities and equipment.",
+      "long": false
+    },
+    {
+      "key": "medical.point.2.title",
+      "page": "Medical Facilities",
+      "label": "About box 2: name",
+      "text": "Medical facilities",
+      "long": false
+    },
+    {
+      "key": "medical.point.2.text",
+      "page": "Medical Facilities",
+      "label": "About box 2: text",
+      "text": "Support for the facilities that bring care closer to the families we serve.",
+      "long": false
+    },
+    {
+      "key": "medical.point.3.title",
+      "page": "Medical Facilities",
+      "label": "About box 3: name",
+      "text": "Treatment assistance",
+      "long": false
+    },
+    {
+      "key": "medical.point.3.text",
+      "page": "Medical Facilities",
+      "label": "About box 3: text",
+      "text": "Funds raised for patients who cannot afford the treatment they need.",
+      "long": false
+    },
+    {
+      "key": "medical.point.4.title",
+      "page": "Medical Facilities",
+      "label": "About box 4: name",
+      "text": "Health camps",
+      "long": false
+    },
+    {
+      "key": "medical.point.4.text",
+      "page": "Medical Facilities",
+      "label": "About box 4: text",
+      "text": "Free check-ups in remote villages, with referral where needed.",
+      "long": false
+    },
+    {
+      "key": "medical.steps.title",
+      "page": "Medical Facilities",
+      "label": "How it works: heading",
+      "text": "How the medical facilities programme runs",
+      "long": false
+    },
+    {
+      "key": "medical.step.1.title",
+      "page": "Medical Facilities",
+      "label": "Step 1: name",
+      "text": "Identify",
+      "long": false
+    },
+    {
+      "key": "medical.step.1.text",
+      "page": "Medical Facilities",
+      "label": "Step 1: text",
+      "text": "We find the hospitals, facilities and patients where support is needed most.",
+      "long": false
+    },
+    {
+      "key": "medical.step.2.title",
+      "page": "Medical Facilities",
+      "label": "Step 2: name",
+      "text": "Raise",
+      "long": false
+    },
+    {
+      "key": "medical.step.2.text",
+      "page": "Medical Facilities",
+      "label": "Step 2: text",
+      "text": "Donors, partners and crowdfunding bring the funds together.",
+      "long": false
+    },
+    {
+      "key": "medical.step.3.title",
+      "page": "Medical Facilities",
+      "label": "Step 3: name",
+      "text": "Fund",
+      "long": false
+    },
+    {
+      "key": "medical.step.3.text",
+      "page": "Medical Facilities",
+      "label": "Step 3: text",
+      "text": "The money goes to the hospital or facility for the agreed purpose.",
+      "long": false
+    },
+    {
+      "key": "medical.step.4.title",
+      "page": "Medical Facilities",
+      "label": "Step 4: name",
+      "text": "Report",
+      "long": false
+    },
+    {
+      "key": "medical.step.4.text",
+      "page": "Medical Facilities",
+      "label": "Step 4: text",
+      "text": "Every contribution is recorded and published on this page.",
+      "long": false
+    },
+    {
+      "key": "medical.funding.eyebrow",
+      "page": "Medical Facilities",
+      "label": "Funding: small line above the heading",
+      "text": "Where the money went",
+      "long": false
+    },
+    {
+      "key": "medical.funding.title",
+      "page": "Medical Facilities",
+      "label": "Funding: heading",
+      "text": "Hospitals & Medical Facilities We Have Funded",
+      "long": false
+    },
+    {
+      "key": "medical.funding.text",
+      "page": "Medical Facilities",
+      "label": "Funding: text",
+      "text": "Every contribution made by the Samiti to a hospital or medical facility, with what it was for and the amount donated.",
+      "long": true
+    },
+    {
+      "key": "medical.hospitals.title",
+      "page": "Medical Facilities",
+      "label": "Hospitals: heading",
+      "text": "Hospital Funding",
+      "long": false
+    },
+    {
+      "key": "medical.hospitals.empty",
+      "page": "Medical Facilities",
+      "label": "Hospitals: text when there are none",
+      "text": "Hospital contributions will be listed here soon.",
+      "long": false
+    },
+    {
+      "key": "medical.facilities.title",
+      "page": "Medical Facilities",
+      "label": "Medical facilities: heading",
+      "text": "NGO Medical Facilities",
+      "long": false
+    },
+    {
+      "key": "medical.facilities.empty",
+      "page": "Medical Facilities",
+      "label": "Medical facilities: text when there are none",
+      "text": "Medical facilities will be listed here soon.",
+      "long": false
+    },
+    {
+      "key": "memberships.hero.title",
+      "page": "Memberships",
+      "label": "Banner heading",
+      "text": "Our Member Organizations",
+      "long": false
+    },
+    {
+      "key": "memberships.hero.text",
+      "page": "Memberships",
+      "label": "Banner text",
+      "text": "A strong network of member organizations working at grassroots and institutional levels to create sustainable social impact.",
+      "long": true
+    },
+    {
+      "key": "memberships.list.eyebrow",
+      "page": "Memberships",
+      "label": "Organizations: small line above the heading",
+      "text": "Our network",
+      "long": false
+    },
+    {
+      "key": "memberships.list.title",
+      "page": "Memberships",
+      "label": "Organizations: heading",
+      "text": "Partners in Lasting Change",
+      "long": false
+    },
+    {
+      "key": "memberships.list.text",
+      "page": "Memberships",
+      "label": "Organizations: text",
+      "text": "Our partners actively contribute in healthcare, education, women empowerment, child welfare and community development, building an inclusive ecosystem for long-term change.",
+      "long": true
+    },
+    {
+      "key": "memberships.list.empty",
+      "page": "Memberships",
+      "label": "Organizations: text when there are none",
+      "text": "Our member organizations will be listed here soon.",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.eyebrow",
+      "page": "Memberships",
+      "label": "Application form: small line above the heading",
+      "text": "Become a member",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.title",
+      "page": "Memberships",
+      "label": "Application form: heading",
+      "text": "Apply for Organization Membership",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.text",
+      "page": "Memberships",
+      "label": "Application form: text",
+      "text": "NGOs, trusts, societies and community organizations can apply to join our network. Fill in the form and our team will review it.",
+      "long": true
+    },
+    {
+      "key": "memberships.apply.step.1.title",
+      "page": "Memberships",
+      "label": "Application step 1: name",
+      "text": "Apply",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.step.1.text",
+      "page": "Memberships",
+      "label": "Application step 1: text",
+      "text": "Tell us about your organization and who we can contact.",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.step.2.title",
+      "page": "Memberships",
+      "label": "Application step 2: name",
+      "text": "Review",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.step.2.text",
+      "page": "Memberships",
+      "label": "Application step 2: text",
+      "text": "Our team checks the registration details and may get in touch.",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.step.3.title",
+      "page": "Memberships",
+      "label": "Application step 3: name",
+      "text": "Listed",
+      "long": false
+    },
+    {
+      "key": "memberships.apply.step.3.text",
+      "page": "Memberships",
+      "label": "Application step 3: text",
+      "text": "Once approved, your organization appears on this page as a member.",
+      "long": false
+    },
+    {
+      "key": "memberships.join.title",
+      "page": "Memberships",
+      "label": "Join box: heading",
+      "text": "Join Our Network",
+      "long": false
+    },
+    {
+      "key": "memberships.join.text",
+      "page": "Memberships",
+      "label": "Join box: text",
+      "text": "We welcome NGOs, institutions and community organizations to collaborate with us for meaningful and sustainable impact across India.",
+      "long": true
+    },
+    {
+      "key": "media.hero.title",
+      "page": "Photo & Video Gallery",
+      "label": "Banner heading",
+      "text": "Photo & Video Gallery",
+      "long": false
+    },
+    {
+      "key": "media.hero.text",
+      "page": "Photo & Video Gallery",
+      "label": "Banner text",
+      "text": "Real work. Real people. Real change.",
+      "long": false
+    },
+    {
+      "key": "media.photos.title",
+      "page": "Photo & Video Gallery",
+      "label": "Photos: heading",
+      "text": "Photo Gallery",
+      "long": false
+    },
+    {
+      "key": "media.videos.title",
+      "page": "Photo & Video Gallery",
+      "label": "Videos: heading",
+      "text": "Video Gallery",
+      "long": false
+    },
+    {
+      "key": "media.press.title",
+      "page": "Photo & Video Gallery",
+      "label": "Press: heading",
+      "text": "Press / News",
+      "long": false
+    },
+    {
+      "key": "news.hero.title",
+      "page": "Latest News",
+      "label": "Banner heading",
+      "text": "Latest Stories",
+      "long": false
+    },
+    {
+      "key": "news.hero.text",
+      "page": "Latest News",
+      "label": "Banner text",
+      "text": "Field stories and programme updates from our team.",
+      "long": false
+    },
+    {
+      "key": "events.hero.title",
+      "page": "Events Calendar",
+      "label": "Banner heading",
+      "text": "Events Calendar",
+      "long": false
+    },
+    {
+      "key": "events.hero.text",
+      "page": "Events Calendar",
+      "label": "Banner text",
+      "text": "Health camps, plantation drives, learning centre days and more.",
+      "long": false
+    },
+    {
+      "key": "events.upcoming.title",
+      "page": "Events Calendar",
+      "label": "Upcoming events: heading",
+      "text": "Upcoming events",
+      "long": false
+    },
+    {
+      "key": "events.upcoming.empty",
+      "page": "Events Calendar",
+      "label": "Upcoming events: text when there are none",
+      "text": "No upcoming events yet. Verified drives will be listed here as soon as the dates are confirmed.",
+      "long": true
+    },
+    {
+      "key": "events.past.title",
+      "page": "Events Calendar",
+      "label": "Past events: heading",
+      "text": "Past events",
+      "long": false
+    },
+    {
+      "key": "transparency.hero.title",
+      "page": "Transparency & Reports",
+      "label": "Banner heading",
+      "text": "Transparency & Financial Reports",
+      "long": false
+    },
+    {
+      "key": "transparency.hero.text",
+      "page": "Transparency & Reports",
+      "label": "Banner text",
+      "text": "Our impact reports are published openly. Registration certificates are shared on request, for donors, CSR partners, banks and the community.",
+      "long": true
+    },
+    {
+      "key": "transparency.reports.title",
+      "page": "Transparency & Reports",
+      "label": "Reports: heading",
+      "text": "Annual & Impact Reports",
+      "long": false
+    },
+    {
+      "key": "transparency.reports.text",
+      "page": "Transparency & Reports",
+      "label": "Reports: text",
+      "text": "The organisation maintains statutory compliance, regular audits and annual reports. Our published impact reports set out what was done, where, for whom and with which partners.",
+      "long": true
+    },
+    {
+      "key": "transparency.annual.title",
+      "page": "Transparency & Reports",
+      "label": "Annual reports box: heading",
+      "text": "Comprehensive Annual Report 2004-2025",
+      "long": false
+    },
+    {
+      "key": "transparency.annual.text",
+      "page": "Transparency & Reports",
+      "label": "Annual reports box: text",
+      "text": "The annual report of every financial year since the Samiti was registered in 2004, each one to view online or download.",
+      "long": true
+    },
+    {
+      "key": "transparency.request.title",
+      "page": "Transparency & Reports",
+      "label": "Request a certificate: heading",
+      "text": "Request a Certificate",
+      "long": false
+    },
+    {
+      "key": "transparency.request.text",
+      "page": "Transparency & Reports",
+      "label": "Request a certificate: text",
+      "text": "Registered on 19 October 2004 as a society under the M.P. Societies Registration Act, 1973. Fill in the form and your request goes straight to our records team.",
+      "long": true
+    },
+    {
+      "key": "transparency.step.1.title",
+      "page": "Transparency & Reports",
+      "label": "Step 1: name",
+      "text": "Choose",
+      "long": false
+    },
+    {
+      "key": "transparency.step.1.text",
+      "page": "Transparency & Reports",
+      "label": "Step 1: text",
+      "text": "Pick the certificate you need.",
+      "long": false
+    },
+    {
+      "key": "transparency.step.2.title",
+      "page": "Transparency & Reports",
+      "label": "Step 2: name",
+      "text": "Tell us who you are",
+      "long": false
+    },
+    {
+      "key": "transparency.step.2.text",
+      "page": "Transparency & Reports",
+      "label": "Step 2: text",
+      "text": "Add your contact details and the purpose, for example donor or CSR due diligence.",
+      "long": false
+    },
+    {
+      "key": "transparency.step.3.title",
+      "page": "Transparency & Reports",
+      "label": "Step 3: name",
+      "text": "We reply",
+      "long": false
+    },
+    {
+      "key": "transparency.step.3.text",
+      "page": "Transparency & Reports",
+      "label": "Step 3: text",
+      "text": "Our team checks the records and sends the document to your email, or by post if you ask for a certified copy.",
+      "long": true
+    },
+    {
+      "key": "transparency.request.note",
+      "page": "Transparency & Reports",
+      "label": "Request a certificate: closing note (follows the phone and email)",
+      "text": "Availability depends on the records held for the year you ask for.",
+      "long": false
+    },
+    {
+      "key": "involved.hero.title",
+      "page": "Get Involved",
+      "label": "Banner heading",
+      "text": "Volunteer & CSR Partnerships",
+      "long": false
+    },
+    {
+      "key": "involved.hero.text",
+      "page": "Get Involved",
+      "label": "Banner text",
+      "text": "Whether you donate, volunteer, partner via corporate CSR, or sponsor a cause, your involvement reaches lives directly.",
+      "long": true
+    },
+    {
+      "key": "involved.way.1.title",
+      "page": "Get Involved",
+      "label": "Way to help 1: name",
+      "text": "Donate",
+      "long": false
+    },
+    {
+      "key": "involved.way.1.text",
+      "page": "Get Involved",
+      "label": "Way to help 1: text",
+      "text": "Fund education kits, health camps and relief drives.",
+      "long": false
+    },
+    {
+      "key": "involved.way.2.title",
+      "page": "Get Involved",
+      "label": "Way to help 2: name",
+      "text": "Volunteer",
+      "long": false
+    },
+    {
+      "key": "involved.way.2.text",
+      "page": "Get Involved",
+      "label": "Way to help 2: text",
+      "text": "Give your time at field camps and learning centers.",
+      "long": false
+    },
+    {
+      "key": "involved.way.3.title",
+      "page": "Get Involved",
+      "label": "Way to help 3: name",
+      "text": "Corporate CSR",
+      "long": false
+    },
+    {
+      "key": "involved.way.3.text",
+      "page": "Get Involved",
+      "label": "Way to help 3: text",
+      "text": "Partner with us for verified, reportable impact.",
+      "long": false
+    },
+    {
+      "key": "involved.way.4.title",
+      "page": "Get Involved",
+      "label": "Way to help 4: name",
+      "text": "Sponsor a Cause",
+      "long": false
+    },
+    {
+      "key": "involved.way.4.text",
+      "page": "Get Involved",
+      "label": "Way to help 4: text",
+      "text": "Sponsor a child, a tree drive or a family kit.",
+      "long": false
+    },
+    {
+      "key": "involved.volunteer.title",
+      "page": "Get Involved",
+      "label": "Volunteer form: heading",
+      "text": "Volunteer with us",
+      "long": false
+    },
+    {
+      "key": "involved.volunteer.text",
+      "page": "Get Involved",
+      "label": "Volunteer form: text",
+      "text": "Tell us how you would like to help and our team will contact you.",
+      "long": false
+    },
+    {
+      "key": "involved.enquiry.title",
+      "page": "Get Involved",
+      "label": "CSR form: heading",
+      "text": "Corporate CSR enquiry",
+      "long": false
+    },
+    {
+      "key": "involved.enquiry.text",
+      "page": "Get Involved",
+      "label": "CSR form: text",
+      "text": "Partner with us for verified, reportable impact.",
+      "long": false
+    },
+    {
+      "key": "contact.hero.title",
+      "page": "Contact Us",
+      "label": "Banner heading",
+      "text": "Contact Us & Field Office",
+      "long": false
+    },
+    {
+      "key": "contact.title",
+      "page": "Contact Us",
+      "label": "Heading above the contact boxes",
+      "text": "Field Office & Contact",
+      "long": false
+    },
+    {
+      "key": "donate.title",
+      "page": "Donate",
+      "label": "Heading",
+      "text": "Make a Donation",
+      "long": false
+    },
+    {
+      "key": "donate.text",
+      "page": "Donate",
+      "label": "Text under the heading",
+      "text": "Every donation, no matter how big or small, makes a significant difference to our cause. Thank you for doing your part to help.",
+      "long": true
+    },
+    {
+      "key": "donate.methods.title",
+      "page": "Donate",
+      "label": "Payment methods: heading",
+      "text": "Choose how to pay on the next page",
+      "long": false
+    },
+    {
+      "key": "donate.monthly.title",
+      "page": "Donate",
+      "label": "Monthly donation: name",
+      "text": "Monthly donation",
+      "long": false
+    },
+    {
+      "key": "donate.monthly.text",
+      "page": "Donate",
+      "label": "Monthly donation: text",
+      "text": "Give every month and support our work all year.",
+      "long": false
+    },
+    {
+      "key": "donate.note",
+      "page": "Donate",
+      "label": "Note under the button",
+      "text": "You enter or confirm your amount on the secure payment page that opens next.",
+      "long": false
+    },
+    {
+      "key": "donate.footnote",
+      "page": "Donate",
+      "label": "Line under the card",
+      "text": "Your gift supports education, health, women's livelihoods, environment and relief work in the communities we serve.",
+      "long": true
+    },
+    {
+      "key": "donate.photo.quote",
+      "page": "Donate",
+      "label": "Line on the photo",
+      "text": "Every child deserves a chance to learn, grow and dream.",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.title",
+      "page": "Privacy Policy",
+      "label": "Page heading",
+      "text": "Privacy Policy",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s1.title",
+      "page": "Privacy Policy",
+      "label": "Section 1: heading",
+      "text": "Information we collect",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s1.p1",
+      "page": "Privacy Policy",
+      "label": "Section 1 (Information we collect): paragraph 1",
+      "text": "Details you give us through our forms: name, email address, phone number, organisation, postal address (only for hard-copy requests) and the message you write.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s1.p2",
+      "page": "Privacy Policy",
+      "label": "Section 1 (Information we collect): paragraph 2",
+      "text": "Donation details needed to issue receipts, such as name, email, phone and PAN (for 80G receipts). Card, UPI and bank details are handled by the payment gateway and are not stored by us.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s2.title",
+      "page": "Privacy Policy",
+      "label": "Section 2: heading",
+      "text": "How we use it",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s2.p1",
+      "page": "Privacy Policy",
+      "label": "Section 2 (How we use it): paragraph 1",
+      "text": "To reply to your enquiry, process document requests, register volunteers and event attendees, issue donation receipts, and send newsletters you subscribed to.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s2.p2",
+      "page": "Privacy Policy",
+      "label": "Section 2 (How we use it): paragraph 2",
+      "text": "We do not sell or rent your personal information.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s3.title",
+      "page": "Privacy Policy",
+      "label": "Section 3: heading",
+      "text": "Sharing",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s3.p1",
+      "page": "Privacy Policy",
+      "label": "Section 3 (Sharing): paragraph 1",
+      "text": "We share data only with service providers who help us run the website, send email or process payments, and with authorities when the law requires it.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s4.title",
+      "page": "Privacy Policy",
+      "label": "Section 4: heading",
+      "text": "Retention and security",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s4.p1",
+      "page": "Privacy Policy",
+      "label": "Section 4 (Retention and security): paragraph 1",
+      "text": "We keep your information only as long as needed for the purpose it was given, or as required by tax and accounting law. We use reasonable technical and organisational measures to protect it.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s5.title",
+      "page": "Privacy Policy",
+      "label": "Section 5: heading",
+      "text": "Your choices",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s5.p1",
+      "page": "Privacy Policy",
+      "label": "Section 5 (Your choices): paragraph 1",
+      "text": "You may ask us to access, correct or delete your information, or unsubscribe from the newsletter at any time. See the DPDP Compliance Notice for your rights under Indian law.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.s6.title",
+      "page": "Privacy Policy",
+      "label": "Section 6: heading",
+      "text": "Contact",
+      "long": false
+    },
+    {
+      "key": "legal.privacy.s6.p1",
+      "page": "Privacy Policy",
+      "label": "Section 6 (Contact): paragraph 1",
+      "text": "Sahara Jan Kalyan Samiti, 21/419, Behind TCPC, Khurai Road, Shastri Ward No. 20, Near Hotel Ahilya, Sagar, Madhya Pradesh - 470002, India. Email: info@saharangosag.com. Phone: +91 9630494707.",
+      "long": true
+    },
+    {
+      "key": "legal.privacy.updated",
+      "page": "Privacy Policy",
+      "label": "Last updated (month and year; change it whenever you change this page)",
+      "text": "October 2026",
+      "long": false
+    },
+    {
+      "key": "legal.terms.title",
+      "page": "Terms of Use",
+      "label": "Page heading",
+      "text": "Terms of Use",
+      "long": false
+    },
+    {
+      "key": "legal.terms.intro",
+      "page": "Terms of Use",
+      "label": "Opening paragraph",
+      "text": "By using this website you agree to these terms. If you do not agree, please do not use the site.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.s1.title",
+      "page": "Terms of Use",
+      "label": "Section 1: heading",
+      "text": "Use of the website",
+      "long": false
+    },
+    {
+      "key": "legal.terms.s1.p1",
+      "page": "Terms of Use",
+      "label": "Section 1 (Use of the website): paragraph 1",
+      "text": "The content is provided for general information about the work of Sahara Jan Kalyan Samiti. You may not misuse the site, attempt unauthorised access, or submit false or harmful information through its forms.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.s2.title",
+      "page": "Terms of Use",
+      "label": "Section 2: heading",
+      "text": "Content and copyright",
+      "long": false
+    },
+    {
+      "key": "legal.terms.s2.p1",
+      "page": "Terms of Use",
+      "label": "Section 2 (Content and copyright): paragraph 1",
+      "text": "Text, photographs and logos belong to Sahara Jan Kalyan Samiti or their respective owners. You may share them for non-commercial, awareness purposes with credit to us. Any other use needs our written permission.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.s3.title",
+      "page": "Terms of Use",
+      "label": "Section 3: heading",
+      "text": "Donations",
+      "long": false
+    },
+    {
+      "key": "legal.terms.s3.p1",
+      "page": "Terms of Use",
+      "label": "Section 3 (Donations): paragraph 1",
+      "text": "Donations are voluntary. Receipts and tax certificates are issued as per applicable law. Refund requests must be sent to us in writing.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.s4.title",
+      "page": "Terms of Use",
+      "label": "Section 4: heading",
+      "text": "External links",
+      "long": false
+    },
+    {
+      "key": "legal.terms.s4.p1",
+      "page": "Terms of Use",
+      "label": "Section 4 (External links): paragraph 1",
+      "text": "We are not responsible for the content or privacy practices of other websites we link to.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.s5.title",
+      "page": "Terms of Use",
+      "label": "Section 5: heading",
+      "text": "Disclaimer",
+      "long": false
+    },
+    {
+      "key": "legal.terms.s5.p1",
+      "page": "Terms of Use",
+      "label": "Section 5 (Disclaimer): paragraph 1",
+      "text": "We try to keep information accurate and current but give no warranty that the site is error-free or always available.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.s6.title",
+      "page": "Terms of Use",
+      "label": "Section 6: heading",
+      "text": "Contact",
+      "long": false
+    },
+    {
+      "key": "legal.terms.s6.p1",
+      "page": "Terms of Use",
+      "label": "Section 6 (Contact): paragraph 1",
+      "text": "Sahara Jan Kalyan Samiti, 21/419, Behind TCPC, Khurai Road, Shastri Ward No. 20, Near Hotel Ahilya, Sagar, Madhya Pradesh - 470002, India. Email: info@saharangosag.com. Phone: +91 9630494707.",
+      "long": true
+    },
+    {
+      "key": "legal.terms.updated",
+      "page": "Terms of Use",
+      "label": "Last updated (month and year; change it whenever you change this page)",
+      "text": "October 2026",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.title",
+      "page": "DPDP Compliance Notice",
+      "label": "Page heading",
+      "text": "DPDP Compliance Notice",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.intro",
+      "page": "DPDP Compliance Notice",
+      "label": "Opening paragraph",
+      "text": "This notice explains how Sahara Jan Kalyan Samiti handles your personal data under India's Digital Personal Data Protection Act, 2023 (DPDP Act).",
+      "long": true
+    },
+    {
+      "key": "legal.dpdp.s1.title",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 1: heading",
+      "text": "Consent and purpose",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.s1.p1",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 1 (Consent and purpose): paragraph 1",
+      "text": "We process your personal data only with your consent, given when you submit a form, and only for the purpose stated on that form. You may withdraw consent at any time by writing to us.",
+      "long": true
+    },
+    {
+      "key": "legal.dpdp.s2.title",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 2: heading",
+      "text": "Your rights as a Data Principal",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.s2.p1",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 2 (Your rights as a Data Principal): paragraph 1",
+      "text": "You have the right to access a summary of your data, ask for correction or erasure, nominate another person to exercise your rights if you are unable to, and have your grievances addressed.",
+      "long": true
+    },
+    {
+      "key": "legal.dpdp.s3.title",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 3: heading",
+      "text": "Children's data",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.s3.p1",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 3 (Children's data): paragraph 1",
+      "text": "We do not knowingly collect personal data of children without verifiable consent of a parent or guardian.",
+      "long": true
+    },
+    {
+      "key": "legal.dpdp.s4.title",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 4: heading",
+      "text": "Grievance officer",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.s4.p1",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 4 (Grievance officer): paragraph 1",
+      "text": "Send requests or complaints to info@saharangosag.com with the subject \"Data Privacy\". We will respond within a reasonable time. If you remain unsatisfied you may approach the Data Protection Board of India.",
+      "long": true
+    },
+    {
+      "key": "legal.dpdp.s5.title",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 5: heading",
+      "text": "Contact",
+      "long": false
+    },
+    {
+      "key": "legal.dpdp.s5.p1",
+      "page": "DPDP Compliance Notice",
+      "label": "Section 5 (Contact): paragraph 1",
+      "text": "Sahara Jan Kalyan Samiti, 21/419, Behind TCPC, Khurai Road, Shastri Ward No. 20, Near Hotel Ahilya, Sagar, Madhya Pradesh - 470002, India. Email: info@saharangosag.com. Phone: +91 9630494707.",
+      "long": true
+    },
+    {
+      "key": "legal.dpdp.updated",
+      "page": "DPDP Compliance Notice",
+      "label": "Last updated (month and year; change it whenever you change this page)",
+      "text": "October 2026",
+      "long": false
+    }
+  ]
+}
