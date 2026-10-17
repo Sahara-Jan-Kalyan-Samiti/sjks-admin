@@ -152,10 +152,17 @@ export default function Contacts() {
     <div>
       <PageHeader title="Contact messages">People who wrote to us from the website Contact Us page.</PageHeader>
       <div className="cards">
-        <StatCard label="Total messages" value={num(c?.total)} sub="Everything received from the Contact Us page" />
-        <StatCard label="Not answered yet" value={num(c?.waiting)} sub="Waiting for a reply" tone={c?.waiting ? "attn" : ""} />
-        <StatCard label="Contacted" value={num(c?.contacted)} sub="Already answered" />
-        <StatCard label="New messages" value={num(c?.recent)} sub="Received in the last 30 days" />
+        <StatCard label="Total messages" icon="message" value={num(c?.total)} sub="Everything received from the Contact Us page" />
+        <StatCard
+          label="Not answered yet"
+          icon="mail"
+          accent="amber"
+          value={num(c?.waiting)}
+          sub="Waiting for a reply"
+          tone={c?.waiting ? "attn" : ""}
+        />
+        <StatCard label="Contacted" icon="checkCircle" accent="green" value={num(c?.contacted)} sub="Already answered" />
+        <StatCard label="New messages" icon="trend" value={num(c?.recent)} sub="Received in the last 30 days" />
       </div>
       <ServerList<ContactMessage>
         queryKey="contacts"

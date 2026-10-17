@@ -44,6 +44,13 @@ export const hiAdmin: Record<string, string> = {
   "Admin": "एडमिन",
   "Admin changes (projects, donations, volunteers, events…) will be listed here.": "एडमिन के बदलाव (परियोजनाएँ, दान, स्वयंसेवक, कार्यक्रम…) यहाँ सूचीबद्ध होंगे।",
   "Admin sign in": "एडमिन साइन इन",
+  "Sign in to manage the website, donations and members.": "वेबसाइट, दान और सदस्यों का प्रबंधन करने के लिए साइन इन करें।",
+  "Password is required": "पासवर्ड आवश्यक है",
+  "Password must be at least 6 characters": "पासवर्ड कम से कम 6 अक्षर का होना चाहिए",
+  "Enter your password": "अपना पासवर्ड दर्ज करें",
+  "Show password": "पासवर्ड दिखाएँ",
+  "Hide password": "पासवर्ड छिपाएँ",
+  "Caps Lock is on": "Caps Lock चालू है",
   "Admin users": "एडमिन उपयोगकर्ता",
   "Administrator": "प्रशासक",
   "Admins & activity": "एडमिन और गतिविधि",
@@ -640,6 +647,9 @@ export const hiAdminPatterns: [string, string][] = [
 
 /** A few more fixed texts that the list above does not include. */
 export const hiAdminMore: Record<string, string> = {
+  // sidebar headings and footer
+  "Overview": "सारांश", "Programmes": "कार्यक्रम", "Funds & people": "निधि और लोग", "Messages": "संदेश",
+  "Website content": "वेबसाइट सामग्री", "Administration": "प्रशासन", "View website": "वेबसाइट देखें",
   // status words and small labels as the tables show them
   "success": "सफल", "pending": "लंबित", "failed": "असफल", "refunded": "वापस किया गया", "cancelled": "रद्द", "planned": "नियोजित", "ongoing": "जारी", "completed": "पूर्ण",
   "sent": "भेजा गया", "new": "नया", "active": "सक्रिय", "inactive": "निष्क्रिय", "admin": "एडमिन", "editor": "संपादक", "viewer": "दर्शक", "not dated": "तिथि नहीं", "no change": "कोई बदलाव नहीं",

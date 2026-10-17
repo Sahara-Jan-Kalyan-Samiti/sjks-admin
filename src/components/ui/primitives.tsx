@@ -1,3 +1,4 @@
+import { icons, type IconName } from "./icons";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { Link } from "react-router-dom";
 
@@ -35,27 +36,35 @@ export function StatCard({
   value,
   sub,
   href,
-  tone
+  tone,
+  icon,
+  accent
 }: {
   label: string;
   value: ReactNode;
   sub?: ReactNode;
   href?: string;
   tone?: string;
+  /** A small picture in front of the number (see components/ui/icons.tsx). */
+  icon?: IconName;
+  /** Colour of the picture: blue (default), green, amber or rose. */
+  accent?: "green" | "amber" | "rose";
 }) {
   const inner = (
     <>
+      {icon ? <span className="ic">{icons[icon]}</span> : null}
       <div className="n">{value}</div>
       <div className="l">{label}</div>
       {sub ? <div className="s">{sub}</div> : null}
     </>
   );
+  const cls = ["card", icon ? "has-icon" : "", accent ?? "", tone ?? ""].filter(Boolean).join(" ");
   return href ? (
-    <Link className={`card${tone ? " " + tone : ""}`} to={href}>
+    <Link className={cls} to={href}>
       {inner}
     </Link>
   ) : (
-    <div className={`card${tone ? " " + tone : ""}`}>{inner}</div>
+    <div className={cls}>{inner}</div>
   );
 }
 
