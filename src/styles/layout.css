@@ -196,16 +196,94 @@ nav.side .side-foot button:focus-visible {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 0;
+  padding: 4px 10px 4px 4px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
 }
-.who > span:last-child {
+.who:hover {
+  background: var(--bg);
+  border-color: var(--line);
+}
+.who-edit {
+  flex: none;
+  color: var(--mut);
+  transition: color 0.15s, transform 0.15s;
+}
+.who:hover .who-edit {
+  color: var(--brand);
+  transform: translateY(1px);
+}
+.who:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.profile-photo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.profile-img {
+  width: 84px;
+  height: 84px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(135deg, #38bdf8, #1b6fd8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.profile-photo .btn-like {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-input);
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+.profile-photo .mut {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+.who-text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
   line-height: 1.2;
   font-size: 14px;
+  min-width: 0;
+}
+.who-text b {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
 }
 .who small {
   color: var(--mut);
   font-size: 12px;
+}
+.who .avatar {
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--line);
 }
 .lang-switch {
   display: inline-flex;
@@ -435,7 +513,7 @@ nav.side .side-foot button:focus-visible {
     position: static;
     padding: 10px 14px;
   }
-  .who > span:last-child {
+  .who-text {
     display: none;
   }
   main {
@@ -445,5 +523,100 @@ nav.side .side-foot button:focus-visible {
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ---- dashboard welcome card ---- */
+.dash-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 18px;
+  padding: 22px 24px 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+.dash-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand), #38bdf8);
+}
+.dash-hero-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.dash-hero h1 {
+  margin: 0;
+  font-size: clamp(22px, 2.6vw, 30px);
+  line-height: 1.2;
+}
+.dash-name {
+  color: var(--brand);
+}
+.dash-sub {
+  margin: 6px 0 0;
+  color: var(--mut);
+  font-size: 15px;
+}
+.dash-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 4px 12px 4px 10px;
+  border-radius: 99px;
+  background: var(--bg);
+  color: var(--mut);
+  font-size: 12.5px;
+}
+.dash-live .sep {
+  opacity: 0.6;
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+  animation: live-pulse 2s infinite;
+}
+@keyframes live-pulse {
+  70% {
+    box-shadow: 0 0 0 7px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .live-dot {
+    animation: none;
+  }
+}
+.dash-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.dash-actions button {
+  margin: 0;
+}
+.dash-hero .status-strip {
+  margin: 16px 0 0;
+}
+@media (max-width: 600px) {
+  .dash-hero {
+    padding: 18px 16px;
+  }
+  .dash-actions button {
+    flex: 1 1 100%;
   }
 }

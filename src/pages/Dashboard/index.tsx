@@ -6,7 +6,7 @@ import { getContactMessages } from "@/api/messages";
 import { useMe } from "@/auth/AuthProvider";
 import { BarChart, StatBars } from "@/components/ui/charts";
 import { useToast } from "@/components/ui/feedback";
-import { Button, EmptyState, Msg, PageHeader, Panel, Spinner, StatCard, Tag } from "@/components/ui/primitives";
+import { Button, EmptyState, Msg, Panel, Spinner, StatCard, Tag } from "@/components/ui/primitives";
 import { useBusy } from "@/hooks/useBusy";
 import { backendConfigured } from "@/lib/backend";
 import { messageOf } from "@/lib/errors";
@@ -74,9 +74,22 @@ export default function Dashboard() {
 
   return (
     <div>
-      <PageHeader
-        title={`${greeting()}, ${me.display_name || me.email} 👋`}
-        actions={
+      <section className="dash-hero">
+        <div className="dash-hero-top">
+          <div className="grow">
+            <h1>
+              {greeting()}, <span className="dash-name">{me.display_name || me.email}</span> <span aria-hidden="true">👋</span>
+            </h1>
+            <p className="dash-sub">Here&apos;s an overview of your impact and activities.</p>
+            <p className="dash-live">
+              <span className="live-dot" aria-hidden="true" />
+              Live from the database
+              <span className="sep" aria-hidden="true">
+                ·
+              </span>
+              {`Updated ${new Date(dash.dataUpdatedAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })}`}
+            </p>
+          </div>
           <Button
             className="ghost"
             busy={dash.isFetching || contact.isFetching}
@@ -87,21 +100,25 @@ export default function Dashboard() {
                 .catch((e) => toast(messageOf(e), "err"))
             }
           >
-            Refresh
+            ↻ Refresh
           </Button>
-        }
-      >
-        {`Here's an overview of your impact and activities · live from the database · updated ${new Date(dash.dataUpdatedAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" })}`}
-      </PageHeader>
-      <div className="row">
-        <button onClick={() => setProjectForm(true)}>+ Add project</button>
-        <button onClick={() => navigate("/broadcast")}>Broadcast message</button>
-        <button onClick={() => setDonationForm(true)}>Record offline donation</button>
-      </div>
-      <div className="status-strip">
-        {!backendConfigured && <span className="chip">● E-mail and receipts need the backend (set VITE_API_URL)</span>}
-        {todo.length ? todo : <span className="chip ok">✓ Nothing waiting for approval</span>}
-      </div>
+        </div>
+        <div className="dash-actions">
+          <button type="button" onClick={() => setProjectForm(true)}>
+            + Add project
+          </button>
+          <button type="button" className="ghost" onClick={() => navigate("/broadcast")}>
+            Broadcast message
+          </button>
+          <button type="button" className="ghost" onClick={() => setDonationForm(true)}>
+            Record offline donation
+          </button>
+        </div>
+        <div className="status-strip">
+          {!backendConfigured && <span className="chip">● E-mail and receipts need the backend (set VITE_API_URL)</span>}
+          {todo.length ? todo : <span className="chip ok">✓ Nothing waiting for approval</span>}
+        </div>
+      </section>
 
       <div className="cards-wrap">
         <div className="cards balanced">
