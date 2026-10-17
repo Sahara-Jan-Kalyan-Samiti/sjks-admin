@@ -187,8 +187,7 @@ export function DataTable<T>({
             Clear filters
           </button>
         )}
-        <div className="grow" />
-        {typeof tools === "function" ? tools(filtered) : tools}
+        <div className="dt-actions">{typeof tools === "function" ? tools(filtered) : tools}</div>
       </div>
 
       {!loading && !error && summary && filtered.length > 0 && <div className="dt-sum">{summary(filtered)}</div>}
