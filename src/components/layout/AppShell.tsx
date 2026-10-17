@@ -8,6 +8,7 @@ import { Spinner } from "@/components/ui/primitives";
 import { useBadges } from "@/hooks/useBadges";
 import { LanguageSwitch } from "@/i18n/LangProvider";
 import { site } from "@/config/organisation";
+import { MyProfile } from "./MyProfile";
 import { NotificationBell } from "./NotificationBell";
 
 const ROLE = { admin: "Administrator", editor: "Editor", viewer: "Viewer" } as const;
@@ -18,6 +19,7 @@ export function AppShell() {
   const { signOut } = useAuth();
   const badges = useBadges();
   const [open, setOpen] = useState(false);
+  const [profile, setProfile] = useState(false);
   const { pathname } = useLocation();
   const current = pages.find((p) => pathname === "/" + p.path || pathname.startsWith("/" + p.path + "/"));
 
@@ -88,7 +90,7 @@ export function AppShell() {
           <div className="grow" />
           <LanguageSwitch />
           <NotificationBell me={me} />
-          <div className="who">
+          <button type="button" className="who" title="Edit my name and photo" aria-haspopup="dialog" onClick={() => setProfile(true)}>
             {me.photo_path ? (
               <img
                 className="avatar"
@@ -103,12 +105,16 @@ export function AppShell() {
                 {initial}
               </span>
             )}
-            <span>
+            <span className="who-text">
               <b>{me.display_name || me.email}</b>
               <small>{ROLE[me.role]}</small>
             </span>
-          </div>
+            <svg className="who-edit" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
         </header>
+        {profile && <MyProfile onClose={() => setProfile(false)} />}
         <main id="main" tabIndex={-1}>
           <Suspense fallback={<Spinner />}>
             <Outlet />
