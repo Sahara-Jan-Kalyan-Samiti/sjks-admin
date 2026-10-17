@@ -291,16 +291,96 @@ nav.side .side-foot button:focus-visible {
   min-width: 0;
 }
 .login {
-  max-width: 400px;
-  margin: 12vh auto;
-  padding: 0 16px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: radial-gradient(ellipse at top, rgba(27, 111, 216, 0.14), transparent 60%), var(--bg);
 }
 .login .panel {
-  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 28px;
   box-shadow: 0 24px 50px -24px rgba(11, 61, 122, 0.4);
+}
+.login-logo {
+  display: block;
+  height: 52px;
+  width: auto;
+  margin: 0 auto 18px;
+}
+.login .panel h1 {
+  text-align: center;
+  margin: 0;
+}
+.login-sub {
+  text-align: center;
+  color: var(--mut);
+  font-size: 14px;
+  margin: 6px 0 20px;
+}
+.login .panel label {
+  display: block;
+  margin-top: 14px;
+}
+.login .panel label input {
+  width: 100%;
+  margin-top: 6px;
+}
+.login .panel input[aria-invalid="true"] {
+  border-color: var(--bad);
+  box-shadow: 0 0 0 3px rgba(179, 38, 30, 0.12);
+}
+.login-pw {
+  position: relative;
+  display: block;
+}
+.login-pw input {
+  padding-right: 46px;
+}
+.login-eye {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--mut);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.login-eye:hover {
+  color: var(--brand);
+}
+.login-err {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--bad);
+}
+.login-warn {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--warn);
+}
+.login-submit {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 18px;
+}
+.login-foot {
+  text-align: center;
+  margin: 16px 0 0;
+  font-size: 13px;
 }
 .login .lang-switch {
   margin: 12px 0 0;
+  justify-content: center;
 }
 
 /* sections side by side only while each one still has room: 3 across on wide screens, 2 on medium, 1 on narrow */
