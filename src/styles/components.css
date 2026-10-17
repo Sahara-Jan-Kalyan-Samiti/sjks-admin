@@ -968,3 +968,71 @@ select.org-sel {
   min-width: 0;
   overflow-wrap: anywhere;
 }
+
+/* ---- toolbar and table header alignment ---- */
+/* search box, dropdowns, date fields and buttons share one height and one bottom line; labels sit above their own control only */
+.dt-tools {
+  align-items: flex-end;
+  gap: 10px 12px;
+  margin-bottom: 14px;
+}
+.dt-tools input,
+.dt-tools select,
+.dt-tools button,
+.dt-tools .btn {
+  box-sizing: border-box;
+  height: 40px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.2;
+  font-size: 14px;
+}
+.dt-tools button,
+.dt-tools .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.dt-tools .dt-search input {
+  width: 100%;
+}
+.dt-f {
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.dt-f select,
+.dt-f input {
+  margin-top: 0;
+  min-width: 130px;
+}
+.dt-tools .grow {
+  flex: 1 1 0;
+}
+/* column headings stay on one line and share one middle line; number columns end at the right edge together with their figures */
+thead th {
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+th .th-sort {
+  white-space: nowrap;
+}
+th.num .th-sort {
+  justify-content: flex-end;
+  width: 100%;
+}
+/* the buttons at the right of the toolbar move together, and stay at the right edge when the toolbar wraps */
+.dt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+  margin-left: auto;
+}
+.dt-actions:empty {
+  display: none;
+}
