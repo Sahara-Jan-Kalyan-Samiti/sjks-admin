@@ -146,6 +146,6 @@ Every unknown path must return `index.html` (single-page app).
 - The beneficiary figure on the dashboard comes from the `site_stats` table.
 - Only the `admin` role can change data today: row-level security uses `is_admin()` everywhere. `editor` and `viewer` exist in `admin_profiles` but need matching policies in `sjks-database` before they are useful.
 
-## Known issues
+## Known issue
 
 - `npm audit` reports two moderate advisories in `react-router` 6. They concern server-side rendering and a redirect case; this app is a plain browser app with fixed internal links, so the real risk is low. The fix is React Router 7, a breaking upgrade that is planned separately.
