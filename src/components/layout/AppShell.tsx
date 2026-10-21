@@ -35,7 +35,7 @@ export function AppShell() {
         <div className="side-top">
           <NavLink to="/dashboard" className="brand">
             <img src="/assets/images/logo.png" alt="" onError={(e) => e.currentTarget.remove()} />
-            <b>NGO Admin</b>
+            <b>NPO Admin</b>
           </NavLink>
           <button
             type="button"

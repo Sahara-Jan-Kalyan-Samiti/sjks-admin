@@ -193,7 +193,7 @@
       "key": "about.founder.intro",
       "page": "About Us",
       "label": "Founder message: first paragraph",
-      "text": "Sahara Jan Kalyan Samiti has grown from community-led work into programmes supporting education, healthcare, nutrition, women's livelihoods, renewable energy and environmental awareness across 12 districts of Madhya Pradesh.",
+      "text": "Sahara Jan Kalyan Samiti has grown from community-led work into programmes supporting education, healthcare, nutrition, women's livelihoods, renewable energy and environmental awareness across a growing number of districts in Madhya Pradesh.",
       "long": true
     },
     {
@@ -466,14 +466,14 @@
       "key": "about.reach.title",
       "page": "About Us",
       "label": "Where we work: heading",
-      "text": "12 Districts of Madhya Pradesh and Beyond",
+      "text": "Growing Across Madhya Pradesh and Beyond",
       "long": false
     },
     {
       "key": "about.reach.text",
       "page": "About Us",
       "label": "Where we work: text",
-      "text": "With 20+ years of grassroots field experience, the Samiti works with marginalised, tribal, rural and underprivileged communities through participatory, community-driven development.",
+      "text": "With 22 years of grassroots field experience, the Samiti works with marginalised, tribal, rural and underprivileged communities through participatory, community-driven development.",
       "long": true
     },
     {
@@ -823,7 +823,7 @@
       "key": "medical.facilities.title",
       "page": "Medical Facilities",
       "label": "Medical facilities: heading",
-      "text": "NGO Medical Facilities",
+      "text": "NPO Medical Facilities",
       "long": false
     },
     {
@@ -893,7 +893,7 @@
       "key": "memberships.apply.text",
       "page": "Memberships",
       "label": "Application form: text",
-      "text": "NGOs, trusts, societies and community organizations can apply to join our network. Fill in the form and our team will review it.",
+      "text": "NPOs, trusts, societies and community organizations can apply to join our network. Fill in the form and our team will review it.",
       "long": true
     },
     {
@@ -949,7 +949,7 @@
       "key": "memberships.join.text",
       "page": "Memberships",
       "label": "Join box: text",
-      "text": "We welcome NGOs, institutions and community organizations to collaborate with us for meaningful and sustainable impact across India.",
+      "text": "We welcome NPOs, institutions and community organizations to collaborate with us for meaningful and sustainable impact across India.",
       "long": true
     },
     {
