@@ -16,7 +16,7 @@ import type { MedicalFunding } from "@/types";
 // The two lists on the website page (Our Projects → Medical Facilities).
 const KINDS: [string, string][] = [
   ["hospital", "Hospital funding"],
-  ["facility", "NGO medical facility"]
+  ["facility", "NPO medical facility"]
 ];
 const kindName = (k: string) => (KINDS.find(([v]) => v === k) || KINDS[0])[1];
 
