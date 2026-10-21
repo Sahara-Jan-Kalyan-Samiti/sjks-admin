@@ -193,7 +193,7 @@
       "key": "about.founder.intro",
       "page": "About Us",
       "label": "Founder message: first paragraph",
-      "text": "Sahara Jan Kalyan Samiti has grown from community-led work into programmes supporting education, healthcare, nutrition, women's livelihoods, renewable energy and environmental awareness across 12 districts of Madhya Pradesh.",
+      "text": "Sahara Jan Kalyan Samiti has grown from community-led work into programmes supporting education, healthcare, nutrition, women's livelihoods, renewable energy and environmental awareness across a growing number of districts in Madhya Pradesh.",
       "long": true
     },
     {
@@ -466,14 +466,14 @@
       "key": "about.reach.title",
       "page": "About Us",
       "label": "Where we work: heading",
-      "text": "12 Districts of Madhya Pradesh and Beyond",
+      "text": "Growing Across Madhya Pradesh and Beyond",
       "long": false
     },
     {
       "key": "about.reach.text",
       "page": "About Us",
       "label": "Where we work: text",
-      "text": "With 20+ years of grassroots field experience, the Samiti works with marginalised, tribal, rural and underprivileged communities through participatory, community-driven development.",
+      "text": "With 22 years of grassroots field experience, the Samiti works with marginalised, tribal, rural and underprivileged communities through participatory, community-driven development.",
       "long": true
     },
     {
