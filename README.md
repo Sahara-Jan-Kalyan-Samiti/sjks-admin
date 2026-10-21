@@ -1,4 +1,4 @@
-# sjks-admin
+# sjks--admin
 
 Admin panel of **Sahara Jan Kalyan Samiti**: donations, volunteers, events, gallery, blog, reports and everything else that is shown on the public website.
 | Repository                | What it is                                                             |
