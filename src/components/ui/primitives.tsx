@@ -31,6 +31,14 @@ export const Tag = ({ kind, children }: { kind?: string; children?: ReactNode })
 );
 
 /** Dashboard stat card; a link when `href` is given (opens another admin page). */
+/** A value that is text (an e-mail address, a long name) must not run out of its card: it may break before the @, and is set a little smaller. */
+function cardValue(value: ReactNode): { node: ReactNode; long: boolean } {
+  if (typeof value !== "string") return { node: value, long: false };
+  const at = value.indexOf("@");
+  const node = at > 0 ? [value.slice(0, at), <wbr key="at" />, value.slice(at)] : value;
+  return { node, long: value.length > 12 };
+}
+
 export function StatCard({
   label,
   value,
@@ -50,10 +58,11 @@ export function StatCard({
   /** Colour of the picture: blue (default), green, amber or rose. */
   accent?: "green" | "amber" | "rose";
 }) {
+  const shown = cardValue(value);
   const inner = (
     <>
       {icon ? <span className="ic">{icons[icon]}</span> : null}
-      <div className="n">{value}</div>
+      <div className={shown.long ? "n long" : "n"}>{shown.node}</div>
       <div className="l">{label}</div>
       {sub ? <div className="s">{sub}</div> : null}
     </>

@@ -111,6 +111,21 @@
   font-weight: 700;
   color: var(--ink);
 }
+/* text values (an e-mail address, a long name): a little smaller, and they wrap inside the card instead of running out of it */
+.card .n.long {
+  font-size: 20px;
+  line-height: 1.25;
+}
+.card .n,
+.card .l,
+.card .s {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.cards > * {
+  min-width: 0;
+}
 .card .l {
   color: var(--ink);
   font-size: 13.5px;
@@ -882,6 +897,9 @@ select.org-sel {
   }
   .card .n {
     font-size: 21px;
+  }
+  .card .n.long {
+    font-size: 17px;
   }
   .dt-f {
     flex: 1 1 140px;
