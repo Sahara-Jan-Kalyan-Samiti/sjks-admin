@@ -221,6 +221,21 @@ export interface MedicalFunding {
   published: boolean;
 }
 
+/** A fundraising campaign shown on the home page ("Our Active Campaigns"). */
+export interface Campaign {
+  id: number;
+  created_at: string;
+  slug: string;
+  title: string;
+  description: string | null;
+  cause: string | null;
+  goal_amount: number;
+  /** the amount raised so far, as entered by an admin */
+  raised_offset: number;
+  published: boolean;
+  sort_order: number;
+}
+
 export type ApprovalStatus = "pending" | "approved" | "rejected";
 export interface MemberCard {
   id: number;

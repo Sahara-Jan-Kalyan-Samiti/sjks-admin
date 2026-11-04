@@ -10,6 +10,7 @@ import type {
   DonorItem,
   DonorProgramme,
   MedicalFunding,
+  Campaign,
   MemberCard,
   MemberOrganization,
   PageContentRow,
@@ -108,6 +109,13 @@ export async function uploadBlogImage(file: File): Promise<{ url: string; path: 
   return { url: publicUrl("blog-images", path), path };
 }
 export const removeBlogImages = (paths: (string | null | undefined)[]) => removeFiles("blog-images", paths);
+
+// ---------- campaigns (website home page, "Our Active Campaigns") ----------
+const campaigns = crud<Campaign>("campaigns");
+export const getCampaigns = () => listAll<Campaign>("campaigns", [{ column: "sort_order" }, { column: "created_at", ascending: false }]);
+export const createCampaign = (data: Record<string, unknown>) => campaigns.create(data);
+export const updateCampaign = (id: number, data: Record<string, unknown>) => campaigns.update(id, data);
+export const deleteCampaign = (id: number) => campaigns.remove(id);
 
 // ---------- medical funding (website Our Projects → Medical Facilities) ----------
 const medical = crud<MedicalFunding>("medical_fundings");
