@@ -31,6 +31,13 @@ export const pages: PageDef[] = [
     icon: "cross",
     Component: lazy(() => import("@/pages/MedicalFunding"))
   },
+  {
+    path: "campaigns",
+    label: "Campaigns",
+    group: "Programmes",
+    icon: "heart",
+    Component: lazy(() => import("@/pages/Campaigns"))
+  },
   { path: "events", label: "Events", group: "Programmes", icon: "calendar", Component: lazy(() => import("@/pages/Events")) },
   {
     path: "donor",
